@@ -10,10 +10,8 @@ int Input(string data)
 
 int SumList(int n, int m)
 {
-    int summ = 0;
-    if (m < n) return 0;
-    else summ = n + SumList(n+1,m);
-    return summ; 
+    if (m == n-1) return 0;
+    else return n + SumList(n+1,m);
 }
 
 int n = Input ("Введите начальное значение: ");
