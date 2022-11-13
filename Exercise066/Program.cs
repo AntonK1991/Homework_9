@@ -5,7 +5,6 @@ int Input(string data)
 {
     Console.Write(data);
     int n = Convert.ToInt32(Console.ReadLine());
-    // if (n <= 0) Console.WriteLine("Значение должно быть больше 0");
     return n;
 }
 
@@ -13,8 +12,7 @@ int SumList(int n, int m)
 {
     int summ = 0;
     if (m < n) return 0;
-    else 
-    summ = n + SumList(n+1,m);
+    else summ = n + SumList(n+1,m);
     return summ; 
 }
 
