@@ -14,7 +14,7 @@ int NumList(int n, int m)
     if (n < m) return 0;
     else 
     {
-        System.Console.Write($"{n,2}");
+        System.Console.Write($"{n,3}");
         NumList(n-1,m);
     }
     return n; 
